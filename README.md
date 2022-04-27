@@ -239,7 +239,8 @@ Miras veren sınıf tüm özelliklerini alt sınıfa aktarmış olur.
   • Derived Class (child) - Türetilmiş sınıf, başka bir sınıftan miras alan.
   • Base Class (parent) - Temel sınıf, miras alınan sınıf.
   
-Miras alma işlemi miras alacak oaln sınıf adının yanına : sembolü ile miras alınacak sınıf adının yazılması ile yapılmaktadır.
+Miras alma işlemi miras alacak oaln sınıf adının yanına : sembolü ile miras alınacak sınıf adının 
+yazılması ile yapılmaktadır.
 ```
 ```cs
 class Vehicle  // base class (parent) - Temel sınıf 
@@ -324,6 +325,44 @@ class Program
 
     myAnimal.animalSound(); // Çıktı : The animal makes a sound"
     myDog.animalSound(); // Çıktı: The dog says: bow wow
+  }
+}
+```
+
+<br>
+## • Interface (Arayüzler)
+
+```
+Sınıfların içermesi gereken metotların imzaları yer alır sadece, bu yüzdende Interface 
+içerisindeki property'lere bir değer ataması yapılmaz, metotların ise gövdesi yazılmaz.
+Sadece implemente eden sınıfın ne iş yaptığının bir arayüzüdür interface'ler. Ve bir 
+sınıf aynı anda birden fazla arayüzden kalıtım alabilir.
+Interface isimleri "I" ile başlar. 
+
+```
+````cs
+
+public interface IAnimal // Interface
+{
+  void animalSound(); // interface method (does not have a body)
+}
+
+
+class Pig : IAnimal // Pig "implements" the IAnimal interface
+{
+  public void animalSound() 
+  {
+    // The body of animalSound() is provided here
+    Console.WriteLine("The pig says: wee wee");
+  }
+}
+
+class Program 
+{
+  static void Main(string[] args) 
+  {
+    Pig myPig = new Pig();  // Create a Pig object
+    myPig.animalSound();
   }
 }
 ```
