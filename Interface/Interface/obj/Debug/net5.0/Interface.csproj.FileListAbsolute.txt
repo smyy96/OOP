@@ -1,0 +1,16 @@
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\bin\Debug\net5.0\Interface.exe
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\bin\Debug\net5.0\Interface.deps.json
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\bin\Debug\net5.0\Interface.runtimeconfig.json
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\bin\Debug\net5.0\Interface.runtimeconfig.dev.json
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\bin\Debug\net5.0\Interface.dll
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\bin\Debug\net5.0\ref\Interface.dll
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\bin\Debug\net5.0\Interface.pdb
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\obj\Debug\net5.0\Interface.csproj.AssemblyReference.cache
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\obj\Debug\net5.0\Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\obj\Debug\net5.0\Interface.AssemblyInfoInputs.cache
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\obj\Debug\net5.0\Interface.AssemblyInfo.cs
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\obj\Debug\net5.0\Interface.csproj.CoreCompileInputs.cache
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\obj\Debug\net5.0\Interface.dll
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\obj\Debug\net5.0\ref\Interface.dll
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\obj\Debug\net5.0\Interface.pdb
+C:\Users\Sumeyye\source\smyy96\OOP\Interface\Interface\obj\Debug\net5.0\Interface.genruntimeconfig.cache
