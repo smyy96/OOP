@@ -273,6 +273,55 @@ class Program
 ```
 <br>
 
+## • Polymorphism  (Çok Biçimlilik)
+```
+Miras veren sınıf içerisindeki metotları, miras alan sınıf içinde tekrardan tanımlayıp yeni özellikler eklemeye çok biçimlilik denir. Bunu yapabilmemiz için ilk öncee ana sınıf içindeki metot tanımlamasında virtual anahtar kelimesi kulllanılır daha sonra bu metotu türetilmiş sınıf içinde override anahtar kelimesi ile tekrar tanımlarız. Bu şekilde ana sınıftaki metotu türetilmiş sınıf içerisinde tanımlayarak yeni özellikler ekleyebiliyoruz kısaca metotu ezmiş oluyoruz.
+
+ Eğer oluşturulan sınıfın başka bir sınıf tarafından kalıtım olarak alınmasını istemiyorsanız class tanımlamasının önüne "sealed" kelimesini yazarak bu durumu enllemiş olursunuz.
+```
+
+```cs
+sealed class Vehicle 
+{
+  ...
+}
+
+class Car : Vehicle // Bu tanımlama hata verir.
+{
+  ...
+}
+```
+
+```cs
+class Animal  // Base class (parent) - Temel Sınıf
+{
+  public virtual void animalSound() 
+  {
+    Console.WriteLine("The animal makes a sound");
+  }
+}
+
+class Dog : Animal  // Derived class (child) - Türetilmiş sınıf
+{
+  public override void animalSound() 
+  {
+    Console.WriteLine("The dog says: bow wow");
+  }
+}
+
+class Program 
+{
+  static void Main(string[] args) 
+  {
+    Animal myAnimal = new Animal();  // Create a Animal object
+    Animal myDog = new Dog();  // Create a Dog object
+
+    myAnimal.animalSound(); // Çıktı : The animal makes a sound"
+    myDog.animalSound(); // Çıktı: The dog says: bow wow
+  }
+}
+```
+
 ***
 
 Patika C# 101 eğitiminin linki. [C# 101](https://app.patika.dev/courses/csharp-101)
