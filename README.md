@@ -228,21 +228,56 @@ static void Main(string[] args)
   Console.WriteLine(myNum); // çıktı olarak 3 degerini döndürür.
 }
 ```
-
+***
 
 ## • Inheritance (Kalıtım)
 
 ```
 Bir sınıfın başka bir üst sınıftan miras almasına kalıtım denir. 
 Miras veren sınıf tüm özelliklerini alt sınıfa aktarmış olur.
+
+  • Derived Class (child) - Türetilmiş sınıf, başka bir sınıftan miras alan.
+  • Base Class (parent) - Temel sınıf, miras alınan sınıf.
+  
+Miras alma işlemi miras alacak oaln sınıf adının yanına : sembolü ile miras alınacak sınıf adının yazılması ile yapılmaktadır.
+```
+```cs
+class Vehicle  // base class (parent) - Temel sınıf 
+{
+  public string brand = "Ford";  //  field
+  public void honk()             //  method 
+  {                    
+    Console.WriteLine("Tuut, tuut!");
+  }
+}
+
+class Car : Vehicle  // derived class (child) - Vehicle sınıfından miras almış
+{
+  public string modelName = "Mustang";  // Car field
+}
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (From the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand field (from the Vehicle class) and the value of the modelName from the Car class
+    Console.WriteLine(myCar.brand + " " + myCar.modelName);
+  }
+}
 ```
 <br>
 
 ***
 
-[Eğitimin Linki](https://app.patika.dev/courses/csharp-101)
+Patika C# 101 eğitiminin linki. [C# 101](https://app.patika.dev/courses/csharp-101)
 
-[W3 Schools OOP](https://www.w3schools.com/cs/cs_oop.php)
+Bilgilerinizi pekiştirmek için bu platformdaki eğitimlere bakabilirsiniz. [W3 Schools OOP](https://www.w3schools.com/cs/cs_oop.php)
 <br>
 ***
 ### 🔗 Connect with me 
