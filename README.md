@@ -373,8 +373,10 @@ class Program
 ## • Abstract Class (Soyut)
 
 ```
-Veri soyutlama, belirli ayrıntıları gizleme ve kullanıcıya yalnızca gerekli bilgileri gösterme işlemidir.
-Abstract metotlar yalnızca soyut bir sınıfta kullanılabilir ve gövdesi yoktur. Gövde türetilmiş sınıf tarafından sağlanır.
+Veri soyutlama, belirli ayrıntıları gizleme ve kullanıcıya yalnızca gerekli
+bilgileri gösterme işlemidir.
+Abstract metotlar yalnızca soyut bir sınıfta kullanılabilir ve gövdesi yoktur. 
+Gövde türetilmiş sınıf tarafından sağlanır.
 
 Kısaca abstract sınıfların özelliklerine bakacak olursak:
 
@@ -382,13 +384,17 @@ Kısaca abstract sınıfların özelliklerine bakacak olursak:
 • Interface ler gibi metot bildirimi yapabilirsiniz.
 • Sanal metotları override eder gibi abstract metotlar override edilebilir.
 • Abstract metotların gövdesi yazılamaz.
-• Bir abstract class bir abstract metot içeriyorsa, abstract sınıftan türeyen tüm sınıflar bu metodu override etmek zorundadır.
+• Bir abstract class bir abstract metot içeriyorsa, abstract sınıftan türeyen tüm 
+sınıflar bu metodu override etmek zorundadır.
 • Bir sınıf sadece tek abstract sınıftan kalıtım alabilir.
-• Abstract sınıf başka bir abstract sınıftan kalıtım alabilir. Dolaylı olacak türeyen sınıfta birden fazla abstract
-dan kalıtım almış olur. Ve bağlantılı olduğu tüm abstract sınıfların bildirimi yapılmış olan abstract metotlarını 
+• Abstract sınıf başka bir abstract sınıftan kalıtım alabilir. Dolaylı olacak 
+türeyen sınıfta birden fazla abstract
+dan kalıtım almış olur. Ve bağlantılı olduğu tüm abstract sınıfların bildirimi 
+yapılmış olan abstract metotlarını 
 override etmek zorundadır.
 
-Abstract metotdan türetilmiş sınıf içerisinde abstract metodun kullanılabilmesi için de override anahtar kelimesinin kullanılması gerekir.
+Abstract metotdan türetilmiş sınıf içerisinde abstract metodun kullanılabilmesi 
+için de override anahtar kelimesinin kullanılması gerekir.
 ```
 ```cs
 
