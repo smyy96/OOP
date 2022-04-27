@@ -330,6 +330,7 @@ class Program
 ```
 
 <br>
+
 ## • Interface (Arayüzler)
 
 ```
@@ -340,7 +341,7 @@ sınıf aynı anda birden fazla arayüzden kalıtım alabilir.
 Interface isimleri "I" ile başlar. 
 
 ```
-````cs
+```cs
 
 public interface IAnimal // Interface
 {
