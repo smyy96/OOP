@@ -368,6 +368,62 @@ class Program
 }
 ```
 
+<br>
+
+## • Abstract Class (Soyut)
+
+```
+Veri soyutlama, belirli ayrıntıları gizleme ve kullanıcıya yalnızca gerekli bilgileri gösterme işlemidir.
+Abstract metotlar yalnızca soyut bir sınıfta kullanılabilir ve gövdesi yoktur. Gövde türetilmiş sınıf tarafından sağlanır.
+
+Kısaca abstract sınıfların özelliklerine bakacak olursak:
+
+• Normal sınıflar gibi new() anahtar kelimesi ile türetilemezler.
+• Interface ler gibi metot bildirimi yapabilirsiniz.
+• Sanal metotları override eder gibi abstract metotlar override edilebilir.
+• Abstract metotların gövdesi yazılamaz.
+• Bir abstract class bir abstract metot içeriyorsa, abstract sınıftan türeyen tüm sınıflar bu metodu override etmek zorundadır.
+• Bir sınıf sadece tek abstract sınıftan kalıtım alabilir.
+• Abstract sınıf başka bir abstract sınıftan kalıtım alabilir. Dolaylı olacak türeyen sınıfta birden fazla abstract
+dan kalıtım almış olur. Ve bağlantılı olduğu tüm abstract sınıfların bildirimi yapılmış olan abstract metotlarını 
+override etmek zorundadır.
+
+Abstract metotdan türetilmiş sınıf içerisinde abstract metodun kullanılabilmesi için de override anahtar kelimesinin kullanılması gerekir.
+```
+```cs
+
+abstract class Animal // Abstract class
+{
+
+  public abstract void animalSound();   // Abstract method
+
+  public void sleep()
+  {
+    Console.WriteLine("Zzz");
+  }
+}
+
+
+class Pig : Animal
+{
+  public override void animalSound() //Abstract metot override edilmiş.
+  {
+    Console.WriteLine("The pig says: wee wee");
+  }
+}
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    Pig myPig = new Pig(); // Create a Pig object
+    myPig.animalSound();  // Call the abstract method
+    myPig.sleep();  // Call the regular method
+  }
+}
+
+```
+
 ***
 
 Patika C# 101 eğitiminin linki. [C# 101](https://app.patika.dev/courses/csharp-101)
