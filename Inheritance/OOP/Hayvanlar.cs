@@ -12,6 +12,12 @@ namespace OOP
         {
             Console.WriteLine("Hayvanlar adaptasyon yapar.");
         }
+
+        public override void UyaranlaraTepki() // cok biçimlilik
+        {
+            base.UyaranlaraTepki();
+            Console.WriteLine("hayvanlar temasa tepki verir.");        
+        }
     }
 
     public class Surungenler:Hayvanlar
@@ -38,6 +44,7 @@ namespace OOP
             base.Beslenme();
             base.Bosaltim();
             base.Solunum();
+            base.UyaranlaraTepki();
         }
 
         public void Ucmak()

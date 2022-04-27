@@ -12,6 +12,12 @@ namespace OOP
         {
             Console.WriteLine("Bitkiler fotosentez yapar.");
         }
+
+        public override void UyaranlaraTepki()
+        {
+            //base.UyaranlaraTepki();
+            Console.WriteLine("Bitkiler güneşe tepki verir.");
+        }
     }
 
     public class TohumluBitki:Bitkiler
@@ -22,7 +28,7 @@ namespace OOP
             base.Beslenme();
             base.Bosaltim();
             base.Solunum();
-
+            base.UyaranlaraTepki();
         }
         public void tohumlacogalma()
         {

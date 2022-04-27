@@ -8,7 +8,7 @@ namespace OOP
 {
     public class Canlilar
     {
-       protected void Beslenme()
+       protected void Beslenme() // protected tanımlama sanadece o sınıf ve katılım alanaların erişimine izin veriyor.
         {
             Console.WriteLine("Canlılar beslenir");
         }
@@ -21,6 +21,11 @@ namespace OOP
         protected void Bosaltim()
         {
             Console.WriteLine("Canlılar boşaltım yapar.");
+        }
+
+        public virtual void UyaranlaraTepki() // virtual kullanımı
+        {
+             Console.WriteLine("Canlılar uyaranlara tepki verir.");
         }
 
 
