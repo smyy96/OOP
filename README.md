@@ -275,9 +275,15 @@ class Program
 
 ## • Polymorphism  (Çok Biçimlilik)
 ```
-Miras veren sınıf içerisindeki metotları, miras alan sınıf içinde tekrardan tanımlayıp yeni özellikler eklemeye çok biçimlilik denir. Bunu yapabilmemiz için ilk öncee ana sınıf içindeki metot tanımlamasında virtual anahtar kelimesi kulllanılır daha sonra bu metotu türetilmiş sınıf içinde override anahtar kelimesi ile tekrar tanımlarız. Bu şekilde ana sınıftaki metotu türetilmiş sınıf içerisinde tanımlayarak yeni özellikler ekleyebiliyoruz kısaca metotu ezmiş oluyoruz.
+Miras veren sınıf içerisindeki metotları, miras alan sınıf içinde tekrardan tanımlayıp yeni
+özellikler eklemeye çok biçimlilik denir. Bunu yapabilmemiz için ilk önce ana sınıf içindeki
+metot tanımlamasında virtual anahtar kelimesi kullanılır daha sonra bu metotu türetilmiş 
+sınıf içinde override anahtar kelimesi ile tekrar tanımlarız. Bu şekilde ana sınıftaki 
+metotu türetilmiş sınıf içerisinde tanımlayarak yeni özellikler ekleyebiliriz bu şekilde metotu 
+ezmiş oluyoruz.
 
- Eğer oluşturulan sınıfın başka bir sınıf tarafından kalıtım olarak alınmasını istemiyorsanız class tanımlamasının önüne "sealed" kelimesini yazarak bu durumu enllemiş olursunuz.
+Eğer oluşturulan sınıfın başka bir sınıf tarafından kalıtım olarak alınmasını istemiyorsanız 
+class tanımlamasının önüne "sealed" kelimesini yazarak bu durumu engellemiş olursunuz.
 ```
 
 ```cs
