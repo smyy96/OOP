@@ -199,6 +199,36 @@ Yapıların özellikleri:
 ```
 [Alıntı](https://www.gencayyildiz.com/blog/cta-struct-yapilari-ve-kullanim-durumlari/)
 
+<br>
+
+## • Enum
+```
+Bazen uygulama geliştirirken sabit değerlerle çalışmak durumunda kalabiliriz. 
+Enumlar bir grup sabiti temsil eden özel sınıftır.
+
+Sayısal verilerı string ifadelerle saklamanızı sağlar. 
+
+Enumlar default olarak sıfırdan başlar.
+```
+```cs
+enum Months
+{
+  January,    // 0
+  February,   // 1
+  March,      // 2
+  April,      // 3
+  May,        // 4
+  June,       // 5
+  July        // 6
+}
+
+static void Main(string[] args)
+{
+  int myNum = (int) Months.April;
+  Console.WriteLine(myNum); // çıktı olarak 3 degerini döndürür.
+}
+```
+
 
 ## • Inheritance (Kalıtım)
 
@@ -206,4 +236,17 @@ Yapıların özellikleri:
 Bir sınıfın başka bir üst sınıftan miras almasına kalıtım denir. 
 Miras veren sınıf tüm özelliklerini alt sınıfa aktarmış olur.
 ```
+<br>
 
+***
+
+[Eğitimin Linki](https://app.patika.dev/courses/csharp-101)
+
+[W3 Schools OOP](https://www.w3schools.com/cs/cs_oop.php)
+<br>
+***
+### 🔗 Connect with me 
+Konu anlatımında yaptığım hatalar var ise lütfen benimle iletişime geçin :) 
+<p align="left">
+  <a href="mailto:sumeyyecoskun.sc@gmail.com" target="blank"><img align="center" src="https://img.icons8.com/color/48/000000/gmail-new.png" alt="4214976" height="40" width="40" /></a>
+  <a href="https://www.linkedin.com/in/sümeyyecoşkun/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="gautamkrishnar" height="30" width="40"  /></a>
