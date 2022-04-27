@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Inheritance",
+    "\\Inheritance\\OOP",
+    "\\Inheritance\\OOP\\obj",
+    "\\Inheritance\\OOP\\obj\\Debug",
+    "\\Inheritance\\OOP\\obj\\Debug\\net5.0",
+    "\\Inheritance\\OOP\\obj\\Debug\\net5.0\\ref"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Inheritance\\OOP\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
